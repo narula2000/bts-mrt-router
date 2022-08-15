@@ -4,7 +4,7 @@ Are you tired of being confused on which station are linkage station between MRT
 
 ## Teach Stack
 
-- [Next-Auth.js](https://next-auth.js.org)
+- [Next.js](https://nextjs.org)
 - [Prisma](https://prisma.io)
 - [TailwindCSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io) (using @next version? [see v10 docs here](https://alpha.trpc.io))
