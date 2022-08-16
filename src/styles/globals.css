@@ -6,3 +6,11 @@ body {
   @apply antialiased bg-neutral-900;
   font-family: "Inter", sans-serif;
 }
+
+h1 {
+  @apply text-5xl md:text-[5rem] leading-normal font-extrabold text-white;
+}
+
+main {
+  @apply flex flex-col items-center justify-center min-h-screen;
+}

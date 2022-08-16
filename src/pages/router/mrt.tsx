@@ -1,4 +1,4 @@
-import type {NextPage} from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 
 const MRT_Router: NextPage = () => {
@@ -10,14 +10,13 @@ const MRT_Router: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-white">
+      <main>
+        <h1>
           MRT <span className="text-purple-400">Router</span>
         </h1>
       </main>
     </>
   );
 };
-
 
 export default MRT_Router;
