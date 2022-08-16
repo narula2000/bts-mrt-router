@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import Header from "../component/header"
 import { trpc } from "../utils/trpc";
 
 type TechnologyCardProps = {
@@ -12,11 +12,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>BST & MRT Router</title>
-        <meta name="description" content="BST & MRT Router" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header name="BST & MRT Router"/>
 
       <main>
         <h1>

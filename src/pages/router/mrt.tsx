@@ -1,14 +1,10 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import Header from "../../component/header";
 
 const MRT_Router: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>MRT Router</title>
-        <meta name="description" content="MRT Router" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header name="MRT Router"/>
 
       <main>
         <h1>

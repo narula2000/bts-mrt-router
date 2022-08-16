@@ -1,14 +1,10 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import Header from "../../component/header";
 
 const Both_Router: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>BST & MRT Router</title>
-        <meta name="description" content="BST & MRT Router" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header name="BST & MRT Router"/>
 
       <main>
         <h1>
