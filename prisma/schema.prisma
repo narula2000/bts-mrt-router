@@ -2,14 +2,37 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-    provider = "prisma-client-js"
+  provider = "prisma-client-js"
 }
 
 datasource db {
-    provider = "sqlite"
-    url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
-model Example {
-    id String @id @default(cuid())
+model Route {
+  id            Int             @id @default(autoincrement())
+  name          String
+  type          String
+  Station       Station[]
+  Route_Station Route_Station[]
+}
+
+model Station {
+  id            Int             @id @default(autoincrement())
+  code          String
+  name          String
+  route         Route           @relation(fields: [routeId], references: [id])
+  routeId       Int
+  Route_Station Route_Station[]
+}
+
+model Route_Station {
+  id            Int     @id @default(autoincrement())
+  code          String
+  route         Route   @relation(fields: [routeId], references: [id])
+  routeId       Int
+  station       Station @relation(fields: [stationId], references: [id])
+  stationId     Int
+  nextStationId Int
 }
