@@ -36,3 +36,16 @@ model Route_Station {
   stationId     Int
   nextStationId Int
 }
+
+// enum Transportations {
+//     BTS
+//     MRT LOCAL
+//   }
+//
+// enum Routes {
+//     SUKUMWIT
+//     SILOM
+//     GOLD
+//     PURPLE
+//     BLUE
+//   }
